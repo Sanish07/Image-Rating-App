@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ImageRatingApp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/appToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFCA03"
+            app:titleTextColor="@color/white"
+            android:elevation="10dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+    <HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+          android:paddingTop="15dp"
+          android:paddingBottom="15dp"
+          android:background="#827574"
+        android:orientation="horizontal">
+
+            <ImageView
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img1"
+            android:background="#886F6F"
+            android:layout_marginStart="5dp"
+            android:id="@+id/img1"
+            />
+
+            <ImageView
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img2"
+            android:background="@color/black"
+            android:layout_marginStart="5dp"
+            android:id="@+id/img2"
+            />
+
+            <ImageView
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img3"
+            android:background="#FF9F45"
+            android:layout_marginStart="5dp"
+            android:id="@+id/img3"
+            />
+
+            <ImageView
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img4"
+            android:background="#90E0EF"
+            android:layout_marginStart="5dp"
+            android:id="@+id/img4"
+            />
+
+            <ImageView
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img5"
+            android:background="#B667F1"
+            android:layout_marginStart="5dp"
+            android:id="@+id/img5"
+            />
+
+            <ImageView
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img6"
+            android:background="#C0E8C0"
+            android:layout_marginStart="5dp"
+            android:id="@+id/img6"
+            />
+
+            <ImageView
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img7"
+            android:background="#9C0F48"
+            android:layout_marginStart="5dp"
+            android:id="@+id/img7"
+            />
+
+      </LinearLayout>
+   </HorizontalScrollView>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rate the Image"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+            android:visibility="invisible"
+            android:id="@+id/textRate"
+        />
+
+        <ImageView
+            android:layout_width="480dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:id="@+id/previewImg"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgRate"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:numStars="5"
+            android:visibility="invisible"
+            android:progressBackgroundTint="#606962"
+            android:progressTint="#FFCA03"
+            android:rating="0"/>
+
+    </LinearLayout>
+</ScrollView>

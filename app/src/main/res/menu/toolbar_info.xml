@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/it_exit"
+        android:orderInCategory="300"
+        android:title="Exit"
+        android:icon="@drawable/exit_icon"
+        android:iconTint="#000001"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/it_stats"
+        android:orderInCategory="100"
+        android:title="Show Stats"
+        app:showAsAction="always"
+        android:icon="@drawable/stars_icon"
+        />
+
+</menu>
